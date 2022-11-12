@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lnag="en">
     <head>
         <meta charset="utf-8" />
         <title>Code Problem Solution!</title>
@@ -7,33 +7,31 @@
         <script src="../js/post.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     </head>
     <body>
-        <!-- 상단 바 -->
-        <div style=" height: 50px;">
-            <h2>code breaker</h2>
+        <div class="title">
+            <h1>CODE BREAKER</h1>
         </div>
-        
-        <div>
+
+        <div class="wraper">
             <form class="codeForm" action="" method="post">
-                <p>Title: <input type ="text" name="topic"><br></p>
-                <p>Language: <select name="category"></p>
+                <p>TITLE: <input type ="text" style="background-color: white"></p>
+                <p>LANGUAGE: <select name="category"> 
                     <option value='C'>C</option>
                     <option value="JS">JS</option>
                     <option value="PYTHON">PYTHON</option>
                     <option value="JAVA">JAVA</option>
                     <option value="CPP">CPP</option>
-                </select><br/>
-            <p>Code</p>
-                <textarea name="code" cols="30" rows="5">
-                </textarea>
-                <br/>
-                <button type="submit">SUBMIT</button>
-            
+                </select></p><br/>
+                <p>CODE</p>
+                <textarea name="code" cols="100" rows="30"></textarea>
+                <button class="submit" type="submit">SUBMIT</button>
             </form>
-        </div>
 
-        <button class="test_btn">test!</button>
-        <a href="../html/code_detail.html">go!</a>
+            <div class="main_link">
+            <a href="./code_list.html"><span>MAIN PAGE</span></a>
+            </div>
+        </div>
     </body>
 </html>
