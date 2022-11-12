@@ -12,9 +12,8 @@ body, button, input, textarea{
 }
 
 body{
-    max-width: 100vw;
     max-height: 100vh;
-    
+    max-width: 100vw;
 }
 
 .page_title{
@@ -39,7 +38,7 @@ h1{
 
 .code_wraper > .code{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .code_box > .code_list > li{
@@ -49,7 +48,7 @@ h1{
 }
 
 .code_wraper > .code > .code_problem{
-    margin-right: 10rem;   
+  width: 35%;
 }
 
 .code_wraper > .code > .code_problem > h1{
@@ -59,9 +58,9 @@ h1{
 }
 
 .code_wraper > .code > .code_solution{
-    margin-left: 10rem;
     display: flex;
     flex-direction: column;
+    width: 35%;
 }
 
 .code_wraper > .code > .code_solution > form{

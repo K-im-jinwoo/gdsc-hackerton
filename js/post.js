@@ -1,4 +1,4 @@
-const url = `http://192.168.0.5:8080/code`;
+const url = `http://50.18.213.243/code`;
 const codeForm = document.querySelector('.codeForm');
 const code = {
     topic : "",

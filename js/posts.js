@@ -1,4 +1,4 @@
-const url = `http://192.168.0.5:8080/code`;
+const url = `http://50.18.213.243/code`;
 
 (async function getCodes(){
     const res = await axios.get(url);
@@ -10,11 +10,9 @@ const url = `http://192.168.0.5:8080/code`;
         const span1 = document.createElement('span');
         const span2 = document.createElement('span');
 
-        span1.innerHTML = data.topic;
-        span2.innerHTML = data.category;
+        span1.innerHTML = `[${data.category}] ${data.topic} `;
 
         div.appendChild(span1);
-        div.appendChild(span2);
 
         li.appendChild(div);
         ul.appendChild(li);

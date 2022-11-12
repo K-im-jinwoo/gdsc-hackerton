@@ -1,7 +1,7 @@
 let query = window.location.search;
 let param = new URLSearchParams(query);
 let id = param.get('id');
-const url = `http://192.168.0.5:8080/code/${id}`;
+const url = `http://50.18.213.243/code/${id}`;
 
 (async function getCode(){
     const test_list = document.querySelector('.code_list');
