@@ -9,9 +9,7 @@ const url = `http://50.18.213.243/code/${id}`;
     const res = await axios.get(url);
     res.data.codes.forEach((code) => {
         const li = document.createElement('li');
-        console.log(code);
         const newCode = [...code].join('');
-        console.log(newCode);
         li.innerHTML = `${newCode}`;
         test_list.appendChild(li);
     })
@@ -33,7 +31,13 @@ const postSolution = async() => {
             },
             codes : solution_data.codes,
         })
-        console.log(res);
+        if(res.data === 'OK'){
+            alert('성공');
+            location.href = `/html/code_list.html`;
+        }else{
+            alert('실패')
+            window.location.reload();
+        }
     }catch(err){
         console.log(err);
     }

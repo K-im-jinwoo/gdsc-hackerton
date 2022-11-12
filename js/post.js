@@ -11,7 +11,6 @@ codeForm.addEventListener('change', (e) => {
     code[e.target.name] = e.target.value
 })
 
-
 codeForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     try{
@@ -29,7 +28,6 @@ codeForm.addEventListener('submit', async (e) => {
     }
 })
 
-
 const testBtn = document.querySelector('.test_btn');
 testBtn.addEventListener('click', async () => {
     try{
@@ -39,6 +37,3 @@ testBtn.addEventListener('click', async () => {
         console.log(err);
     }
 })
-
-
-
