@@ -1,4 +1,4 @@
-const url = `http://192.168.0.5:8080/code`;
+const url = `http://50.18.213.243/code`;
 const codeForm = document.querySelector('.codeForm');
 const code = {
     topic : "",
@@ -10,7 +10,6 @@ const code = {
 codeForm.addEventListener('change', (e) => {
     code[e.target.name] = e.target.value
 })
-
 
 codeForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -29,7 +28,6 @@ codeForm.addEventListener('submit', async (e) => {
     }
 })
 
-
 const testBtn = document.querySelector('.test_btn');
 testBtn.addEventListener('click', async () => {
     try{
@@ -39,6 +37,3 @@ testBtn.addEventListener('click', async () => {
         console.log(err);
     }
 })
-
-
-
